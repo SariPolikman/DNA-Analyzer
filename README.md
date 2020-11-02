@@ -26,5 +26,5 @@ There might be a few typical types of analyses that researchers might like to ha
 Mutations -> Changing the original DNA slice by replacing a few nucleotides by others. Forexample, taking a slice and replacing 10 random nucleotides in it with ‘G’. Then, wecan compare a few such mutated sequences by various means - e.g., finding therelevant codons that generate specific protein types.
 
 Injections -> Creating a new sequence from an existing slice that another short sequence was“injected” into it at a given location. We might hold thousands of such “shortsequences” (from a few nucleotides to hundreds or so) and create many differentinjections (e.g., creating 20 new slices by “injecting” the sequence “AACTGAAGCT”into a given slice in 20 different locations).
-## design pattern were used
+## design 
 ![diagram](https://user-images.githubusercontent.com/57223094/97867869-55733900-1d17-11eb-9bde-85e9bc1fe130.PNG)
