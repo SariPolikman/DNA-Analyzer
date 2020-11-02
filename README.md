@@ -5,59 +5,24 @@
 ## Description
 
 Infrastructure for a system through which it will be possible to study DNAs by searching for certain segments, replacing certain genes,etc.
-The system will help us save all the information and perform actions on it
+The system will help us save all the information and perform actions on it.
 
-## Getting Started
+The system will interact with the user through a CLI (Command Line Interface) that uses the standard I/O. Using that interface, the user will be able to load DNA sequences from files, to analyze them, to manipulate them (e.g., by extracting sequence slices or by modifying the sequence), and to store modified sequences and reports.
 
-### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+## Common Usage of the DNA Analyzer
+Source Sequences
+The DNA Analyzer application will help our scientists in their genetic and biologicalresearch. For example, a common usage might be to hold 10--20 human DNAsequences (single- or double-strand), and have the research on them.Each such a sequence is about 1.510^9 nucleotides long for the single strand, or 310​9nucleotides long for the double strand.
 
-### Installing
+### Analyzed Slices
+The research itself might include thousands of slices from those human DNA genomesequences, that might vary in length - from a few dozens of nucleotides to millions ofthem.
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+### Short Sequences
+We might also hold lots of short DNA sequences (from a few nucleotides to severalhundreds of them), that will later be used in DNA manipulation and analysis.
 
-### Executing program
+## Analysis Types
+There might be a few typical types of analyses that researchers might like to have onthose slices. Some of the most common analyses and manipulations are:
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+Mutations -> Changing the original DNA slice by replacing a few nucleotides by others. Forexample, taking a slice and replacing 10 random nucleotides in it with ‘G’. Then, wecan compare a few such mutated sequences by various means - e.g., finding therelevant codons that generate specific protein types.
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+Injections -> Creating a new sequence from an existing slice that another short sequence was“injected” into it at a given location. We might hold thousands of such “shortsequences” (from a few nucleotides to hundreds or so) and create many differentinjections (e.g., creating 20 new slices by “injecting” the sequence “AACTGAAGCT”into a given slice in 20 different locations).
